@@ -1,0 +1,17 @@
+{
+  "name": "ng-offline-js",
+  "version": "1.0.0",
+  "description": "Angular $http helper for offline-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "offline-js",
+    "offline",
+    "online",
+    "angular"
+  ],
+  "author": "Chaudhry Junaid Anwar",
+  "license": "MIT"
+}
