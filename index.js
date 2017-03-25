@@ -1,5 +1,5 @@
 module.exports = angular.module("ng-offline-js", [])
-.factory('ngOfflineJsInterceptor', function(){
+.factory('ngOfflineJsInterceptor', ['$q', function($q) {
   var Interceptor = {
     responseError: function(response){
       Offline.check();
@@ -7,7 +7,7 @@ module.exports = angular.module("ng-offline-js", [])
     }
   };
   return Interceptor;
-})
+}])
 .config(['$httpProvider', function ($httpProvider) {
   $httpProvider.interceptors.push('ngOfflineJsInterceptor');
 }])

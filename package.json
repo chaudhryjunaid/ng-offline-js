@@ -1,6 +1,6 @@
 {
   "name": "ng-offline-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular $http helper for offline-js",
   "main": "index.js",
   "scripts": {
