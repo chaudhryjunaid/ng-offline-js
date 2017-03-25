@@ -3,10 +3,7 @@ module.exports = angular.module("ng-offline-js", [])
   var Interceptor = {
     responseError: function(response){
       Offline.check();
-      return response;
-    },
-    response: function(response){
-      return response;
+      return $q.reject(response);
     }
   };
   return Interceptor;
